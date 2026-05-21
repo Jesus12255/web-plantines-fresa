@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros — Vivero Vilcahuaura</title>
+  <meta name="description" content="Conoce la historia y el equipo detrás de Vivero Vilcahuaura. Más de 15 años produciendo plantines de fresa certificados." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { green: { brand: '#34c759', brandDark: '#248a3d', accent: '#007aff' } },
+          fontFamily: { sans: ['Inter', 'sans-serif'], hero: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-white overflow-x-hidden film-grain bg-black">
+
+
+  <input type="checkbox" id="menu-toggle" class="hidden">
+
+  <!-- Fondo de Arte Puro -->
+  <div class="blob-container">
+    <div class="blob blob-cyan" style="top: -10%; left: -10%; right: auto; bottom: auto;"></div>
+    <div class="blob blob-green" style="top: 70%; right: -10%; left: auto; bottom: auto;"></div>
+  </div>
+
+  <aside class="fixed right-4 top-1/2 -translate-y-1/2 z-50 glass-lens py-4 px-2.5 rounded-full flex flex-col gap-4 items-center shadow-lg">
+    <a href="#" class="text-white/70 hover:text-white hover:scale-110 transition-premium"><i class="bi bi-instagram text-xl"></i></a>
+    <a href="#" class="text-white/70 hover:text-white hover:scale-110 transition-premium"><i class="bi bi-facebook text-xl"></i></a>
+    <a href="#" class="text-white/70 hover:text-white hover:scale-110 transition-premium"><i class="bi bi-tiktok text-xl"></i></a>
+  </aside>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 px-8 py-3.5 flex items-center justify-between glass-lens !rounded-none border-t-0 border-r-0 border-l-0 !border-b-white/10">
+    <a href="index.html" class="flex items-center hover-float transition-premium">
+      <img src="assets/img/logo.png" class="h-10 w-10 rounded-full border border-white/20" alt="Logo" />
+    </a>
+    <div class="hidden md:block bg-white/5 border border-white/10 px-6 py-1.5 rounded-full backdrop-blur-md">
+      <ul class="flex gap-6 text-sm font-medium text-white/80">
+        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="nosotros.html" class="text-white font-semibold">Sobre nosotros</a></li>
+        <li><a href="productos.html" class="hover:text-white transition-colors">Productos</a></li>
+        <li><a href="clientes.html" class="hover:text-white transition-colors">Clientes</a></li>
+        <li><a href="contacto.html" class="hover:text-white transition-colors">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="flex items-center gap-4 text-white/85">
+
+      <label for="menu-toggle" class="relative cursor-pointer hover:text-white transition-colors hover-float">
+        <i class="bi bi-list text-xl"></i>
+      </label>
+    </div>
+  </nav>
+
+  <!-- HÉROE SOBRE NOSOTROS -->
+  <section class="relative min-h-[75vh] flex items-center pt-32 px-6 md:px-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+      <div class="lg:col-span-7 flex flex-col items-start text-left reveal-scale relative z-20">
+        <span class="text-xs font-bold tracking-widest text-[#007aff] uppercase mb-3">Desde 2009</span>
+        <h1 class="font-hero text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-stroke leading-none tracking-tight uppercase hover:text-white transition-premium">
+          NUESTRA <br>
+          <span class="text-neon-clip">HISTORIA</span>
+        </h1>
+        <p class="font-sans font-bold text-xl md:text-3xl tracking-wide text-white/90 mt-4 uppercase">
+          Pasión por el campo
+        </p>
+        <p class="text-white/60 text-sm max-w-sm mt-6 leading-relaxed">
+          Somos una empresa familiar nacida en Vilcahuaura, dedicada a producir los mejores plantines de fresa del país.
+        </p>
+      </div>
+
+      <div class="lg:col-span-5 flex justify-center lg:justify-end reveal-3d relative z-10 ml-0 lg:-ml-20">
+        <div class="glass-lens rounded-3xl p-4 tilt-card rotate-3 lg:rotate-12 hover:rotate-0 transition-premium duration-1000 w-full max-w-[400px]">
+          <img src="assets/img/nursery-open.png" alt="Vivero" class="w-full rounded-2xl object-cover aspect-square opacity-80 mix-blend-lighten parallax-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISIÓN / VISIÓN / VALORES -->
+  <section class="relative py-24 px-6 md:px-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10 w-full text-center tilt-container">
+      <div class="mb-20 reveal-scale">
+        <h2 class="text-5xl md:text-6xl font-black text-stroke uppercase">Principios</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="glass-lens rounded-[40px] p-10 text-left tilt-card hover-float reveal-scale" style="animation-delay: 0s;">
+          <h3 class="font-black text-4xl mb-6 text-white uppercase text-stroke hover:text-white transition-premium">Misión</h3>
+          <p class="text-sm text-white/60 leading-relaxed font-light">
+            Producir plantines de fresa de alta calidad genética y sanitaria, entregando a cada agricultor la base para una cosecha exitosa y sostenible.
+          </p>
+        </div>
+
+        <div class="glass-lens rounded-[40px] p-10 text-left tilt-card hover-float reveal-scale mt-12" style="animation-delay: 0.2s;">
+          <h3 class="font-black text-4xl mb-6 text-white uppercase text-stroke hover:text-white transition-premium">Visión</h3>
+          <p class="text-sm text-white/60 leading-relaxed font-light">
+            Ser el vivero de referencia en producción de plantines en el Perú, reconocidos por la calidad certificada y el éxito de nuestros clientes.
+          </p>
+        </div>
+
+        <div class="glass-lens rounded-[40px] p-10 text-left tilt-card hover-float reveal-scale" style="animation-delay: 0.4s;">
+          <h3 class="font-black text-4xl mb-6 text-white uppercase text-stroke hover:text-white transition-premium">Valores</h3>
+          <p class="text-sm text-white/60 leading-relaxed font-light">
+            Calidad · Compromiso · Sostenibilidad · Innovación · Honestidad. Cada plantin que cultivamos lleva nuestro respaldo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORIA TEXTO -->
+  <section class="relative py-32 px-6 md:px-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div class="reveal-3d tilt-container">
+        <div class="glass-lens rounded-full w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[500px] lg:h-[500px] flex items-center justify-center overflow-hidden tilt-card relative mx-auto lg:mx-0">
+           <img src="assets/img/farmer.png" alt="Trabajo en Vivero" class="w-full h-full object-cover opacity-60 mix-blend-screen parallax-image" />
+        </div>
+      </div>
+      
+      <div class="text-left reveal-scale">
+        <h2 class="text-5xl md:text-6xl font-black tracking-tighter mb-8 uppercase text-stroke">Dedicación <br>al campo</h2>
+        <p class="text-white/60 text-lg leading-relaxed mb-6 font-light">
+          Vivero Vilcahuaura nació de la pasión de una familia agricultora que buscaba mejorar la calidad de los plantines en la región.
+        </p>
+        <p class="text-white/60 text-lg leading-relaxed mb-10 font-light">
+          A lo largo de los años hemos desarrollado alianzas con proveedores genéticos líderes, garantizando variedades adaptadas al clima y suelo peruano.
+        </p>
+        <a href="productos.html" class="inline-block bg-transparent border border-white/20 text-white px-10 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-premium glass-lens">
+          Ver plantines
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="relative py-24 px-6 md:px-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10 w-full text-center">
+      <div class="mb-16 reveal-scale">
+        <h2 class="text-5xl md:text-6xl font-black text-stroke uppercase">Nuestro Equipo</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 tilt-container">
+        
+        <div class="glass-lens rounded-[40px] overflow-hidden tilt-card hover-float reveal-scale">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/img/farmer.png" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen parallax-image" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+          </div>
+          <div class="p-8 text-left relative z-10 -mt-10">
+            <h3 class="font-black text-2xl text-white uppercase text-stroke hover:text-white transition-premium">Rosa Flores</h3>
+            <p class="text-green-brand text-xs font-bold tracking-wider uppercase mt-1 mb-4">Directora</p>
+            <p class="text-sm text-white/50 leading-relaxed font-light">
+              25 años en producción hortofrutícola. Ingeniera Agrónoma.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-lens rounded-[40px] overflow-hidden tilt-card hover-float reveal-scale" style="animation-delay: 0.2s;">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/img/technical-support.png" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen parallax-image" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+          </div>
+          <div class="p-8 text-left relative z-10 -mt-10">
+            <h3 class="font-black text-2xl text-white uppercase text-stroke hover:text-white transition-premium">Carlos Salas</h3>
+            <p class="text-[#007aff] text-xs font-bold tracking-wider uppercase mt-1 mb-4">Jefe de Producción</p>
+            <p class="text-sm text-white/50 leading-relaxed font-light">
+              Especialista en propagación vegetal certificada.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-lens rounded-[40px] overflow-hidden tilt-card hover-float reveal-scale" style="animation-delay: 0.4s;">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/img/greenhouse.png" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen parallax-image" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+          </div>
+          <div class="p-8 text-left relative z-10 -mt-10">
+            <h3 class="font-black text-2xl text-white uppercase text-stroke hover:text-white transition-premium">Ricardo Salas</h3>
+            <p class="text-green-brand text-xs font-bold tracking-wider uppercase mt-1 mb-4">Campo</p>
+            <p class="text-sm text-white/50 leading-relaxed font-light">
+              20 años trabajando la tierra en Vilcahuaura.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-32 px-6 md:px-16 overflow-hidden text-center reveal-scale">
+    <div class="max-w-3xl mx-auto relative z-10 glass-lens p-12 rounded-[50px] border border-white/20 hover-float transition-premium">
+      <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-6 uppercase text-stroke hover:text-white transition-premium">Únete a <br>nosotros</h2>
+      <a href="contacto.html" class="inline-block mt-6 bg-white text-black px-10 py-4 rounded-full font-black text-sm tracking-widest uppercase hover:bg-green-brand hover:text-white transition-premium">
+        Postular
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="max-w-7xl mx-auto w-full relative z-10 pt-16 pb-6 px-6 md:px-16 border-t border-white/5 grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-left">
+    <div>
+      <p class="text-white font-bold text-lg mb-2">Escríbenos</p>
+      <p class="text-white/60 text-xs md:text-sm">contacto@vilcahuaura.pe</p>
+    </div>
+    <div>
+      <p class="text-white font-bold text-lg mb-2">Visítanos</p>
+      <p class="text-white/60 text-xs md:text-sm">Vilcahuaura, Huaura<br>Lima, Perú.</p>
+    </div>
+    <div>
+      <p class="text-white font-bold text-lg mb-2">Conversemos</p>
+      <p class="text-white/60 text-xs md:text-sm">+51 928 372 674</p>
+    </div>
+    <div class="flex md:justify-end md:items-center h-full">
+      <p class="text-white/40 text-[11px] font-light">© 2025 VV | Arte Puro.</p>
+    </div>
+  </footer>
+
+
+
+  <div class="menu-drawer fixed inset-0 z-[99] flex flex-col justify-start">
+    <label for="menu-toggle" class="menu-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer"></label>
+    <div class="menu-panel relative w-full bg-black/40 border-b border-white/10 backdrop-blur-3xl p-8 pt-24 shadow-2xl flex flex-col gap-6 text-white text-center">
+      <a href="index.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Home</a>
+      <a href="nosotros.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Nosotros</a>
+      <a href="productos.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Productos</a>
+      <a href="clientes.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Clientes</a>
+      <a href="contacto.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Contacto</a>
+      <label for="menu-toggle" class="absolute top-8 right-8 text-white/60 hover:text-white cursor-pointer transition-premium text-3xl hover:rotate-90"><i class="bi bi-x-lg"></i></label>
+    </div>
+  </div>
+
+</body>
+</html>
