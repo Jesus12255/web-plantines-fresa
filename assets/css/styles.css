@@ -77,11 +77,18 @@
   animation-delay: -5s;
 }
 
-/* Optimizaciones y adaptabilidad de Blobs para móviles */
+/* Optimizaciones y adaptabilidad para móviles (Solución de FPS bajos / Rendimiento GPU) */
 @media (max-width: 768px) {
+  /* 1. Desactivamos el ruido SVG en tiempo real en móviles (es el mayor culpable del lag de repintado) */
+  .film-grain::before {
+    display: none !important;
+  }
+
+  /* 2. Reducimos el blur de los blobs y apagamos su animación morphing para evitar repintes continuos */
   .blob {
-    filter: blur(80px);
-    opacity: 0.2;
+    filter: blur(60px);
+    opacity: 0.12;
+    animation: none !important; /* Detiene el morphing animado en móviles */
   }
   .blob-green {
     width: 80vw;
@@ -98,6 +105,19 @@
     min-height: 250px;
     bottom: -5%;
     right: -15%;
+  }
+
+  /* 3. Optimizamos el Glassmorphism reduciendo la carga del backdrop-filter */
+  .glass-lens {
+    backdrop-filter: blur(15px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(15px) saturate(150%) !important;
+    background: rgba(10, 10, 10, 0.7); /* Hacemos el fondo un poco más opaco para compensar el menor blur */
+  }
+
+  /* 4. Optimizamos el menú panel para reducir la carga de blur en celulares */
+  .menu-panel {
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
   }
 }
 
@@ -217,7 +237,6 @@
   }
 }
 
-/* 8. Lógica Funcional sin JS (Cajón del Menú y Filtros) - Intacta pero estilizada */
 /* Cajón del Menú */
 .menu-drawer {
   opacity: 0;
