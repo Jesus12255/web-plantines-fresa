@@ -190,7 +190,7 @@
   transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .hover-float:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: translateY(-5px) scale(1.2);
 }
 
 .tilt-container {
