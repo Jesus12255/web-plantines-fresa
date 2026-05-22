@@ -7,8 +7,6 @@
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <script>
@@ -23,7 +21,7 @@
   </script>
 
 </head>
-<body class="font-sans text-white overflow-x-hidden film-grain bg-black">
+<body class="font-sans text-zinc-900 overflow-x-hidden film-grain bg-slate-50">
 
 
   <input type="checkbox" id="menu-toggle" class="hidden">
@@ -34,78 +32,198 @@
     <div class="blob blob-green" style="top: 80%; right: -20%; left: auto; bottom: auto;"></div>
   </div>
 
-  <aside class="fixed right-4 top-1/2 -translate-y-1/2 z-50 glass-lens py-4 px-2.5 rounded-full flex flex-col gap-4 items-center shadow-lg">
-    <a href="#" class="text-white/70 hover:text-white hover:scale-110 transition-premium"><i class="bi bi-instagram text-xl"></i></a>
-    <a href="#" class="text-white/70 hover:text-white hover:scale-110 transition-premium"><i class="bi bi-facebook text-xl"></i></a>
-    <a href="#" class="text-white/70 hover:text-white hover:scale-110 transition-premium"><i class="bi bi-tiktok text-xl"></i></a>
+  <aside class="fixed right-4 top-1/2 -translate-y-1/2 z-50 glass-lens py-4 px-2.5 rounded-full flex flex-col gap-4 items-center shadow-lg" aria-label="Redes sociales">
+    <a href="#" class="text-zinc-600 hover:text-zinc-900 hover:scale-110 transition-premium"><i class="bi bi-instagram text-xl"></i></a>
+    <a href="#" class="text-zinc-600 hover:text-zinc-900 hover:scale-110 transition-premium"><i class="bi bi-facebook text-xl"></i></a>
+    <a href="#" class="text-zinc-600 hover:text-zinc-900 hover:scale-110 transition-premium"><i class="bi bi-tiktok text-xl"></i></a>
   </aside>
 
   <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50 px-8 py-3.5 flex items-center justify-between glass-lens !rounded-none border-t-0 border-r-0 border-l-0 !border-b-white/10">
+  <nav class="fixed top-0 left-0 w-full z-50 px-8 py-3.5 flex items-center justify-between glass-lens !rounded-none border-t-0 border-r-0 border-l-0 !border-b-black/10">
     <a href="index.html" class="flex items-center hover-float transition-premium">
-      <img src="assets/img/logo.png" class="h-10 w-10 rounded-full border border-white/20" alt="Logo" />
+      <img src="assets/img/logo.png" class="h-10 w-10 rounded-full border border-black/10" alt="Logo" />
     </a>
-    <div class="hidden md:block bg-white/5 border border-white/10 px-6 py-1.5 rounded-full backdrop-blur-md">
-      <ul class="flex gap-6 text-sm font-medium text-white/80">
-        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
-        <li><a href="nosotros.html" class="hover:text-white transition-colors">Sobre nosotros</a></li>
-        <li><a href="productos.html" class="hover:text-white transition-colors">Productos</a></li>
-        <li><a href="clientes.html" class="hover:text-white transition-colors">Clientes</a></li>
-        <li><a href="contacto.html" class="text-white font-semibold">Contacto</a></li>
+    <div class="hidden md:block bg-black/5 border border-black/10 px-6 py-1.5 rounded-full backdrop-blur-md">
+      <ul class="flex gap-6 text-sm font-medium text-zinc-700">
+        <li><a href="index.html" class="hover:text-zinc-950 transition-colors">Home</a></li>
+        <li><a href="nosotros.html" class="hover:text-zinc-950 transition-colors">Sobre nosotros</a></li>
+        <li><a href="productos.html" class="hover:text-zinc-950 transition-colors">Productos</a></li>
+        <li><a href="clientes.html" class="hover:text-zinc-950 transition-colors">Clientes</a></li>
+        <li><a href="contacto.html" class="text-zinc-900 font-semibold">Contacto</a></li>
       </ul>
     </div>
-    <div class="flex items-center gap-4 text-white/85">
+    <div class="flex items-center gap-4 text-zinc-800">
 
-      <label for="menu-toggle" class="relative cursor-pointer hover:text-white transition-colors hover-float">
+      <label for="menu-toggle" class="relative cursor-pointer hover:text-zinc-950 transition-colors hover-float">
         <i class="bi bi-list text-xl"></i>
       </label>
     </div>
   </nav>
 
   <!-- HÉROE CONTACTO -->
-  <section class="relative min-h-[75vh] flex items-center pt-32 px-6 md:px-16 overflow-hidden">
-    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+  <section class="relative min-h-[75vh] flex items-center pt-32 pb-16 px-6 md:px-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-start relative z-10">
       <div class="flex flex-col items-start text-left reveal-scale relative z-20">
-        <h1 class="font-hero text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-stroke leading-none tracking-tight uppercase hover:text-white transition-premium">
+        <h1 class="font-hero text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black text-stroke leading-none tracking-normal uppercase hover:text-zinc-950 transition-premium">
           HABLEMOS <br>
           <span class="text-neon-clip">AHORA</span>
         </h1>
-        <p class="font-sans font-bold text-xl md:text-3xl tracking-wide text-white/90 mt-4 uppercase">
-          Estamos listos
+        <p class="font-sans font-bold text-xl md:text-3xl tracking-wide text-zinc-800 mt-4 uppercase mb-8">
+          Para tu éxito agrícola
         </p>
+
+        <!-- Información Operativa & Logística -->
+        <div class="space-y-6 w-full max-w-lg">
+          <!-- Ubicación / Map -->
+          <div class="glass-lens p-6 w-full text-left hover-float transition-premium">
+            <div class="flex items-start gap-4">
+              <div class="text-green-brand text-2xl mt-1">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-zinc-900 uppercase text-xs tracking-wider mb-1">Vivero & Campo de Propagación</h3>
+                <p class="text-sm text-zinc-600 leading-relaxed">Valle de Huaura, Sector Vilcahuaura, Parcela N° 45, Huaura, Lima, Perú.</p>
+                <a href="https://maps.google.com" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-[#007aff] font-bold mt-2 hover:underline">
+                  Ver en Google Maps <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Horarios -->
+          <div class="glass-lens p-6 w-full text-left hover-float transition-premium">
+            <div class="flex items-start gap-4">
+              <div class="text-green-brand text-2xl mt-1">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-zinc-900 uppercase text-xs tracking-wider mb-3">Horario Operativo</h3>
+                <div class="space-y-2 text-xs text-zinc-600">
+                  <div class="flex justify-between border-b border-black/5 pb-1">
+                    <span>Atención Comercial</span>
+                    <span class="font-semibold text-zinc-800">Lun - Vie: 8:00 AM - 5:00 PM</span>
+                  </div>
+                  <div class="flex justify-between border-b border-black/5 pb-1">
+                    <span>Despacho en Campo (Logística)</span>
+                    <span class="font-semibold text-zinc-800">Lun - Sáb: 7:00 AM - 3:00 PM</span>
+                  </div>
+                  <p class="text-[10px] text-zinc-500 italic mt-1">
+                    * Los despachos requieren coordinación previa con el técnico inspector de SENASA.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canales Directos -->
+          <div class="glass-lens p-6 w-full text-left hover-float transition-premium">
+            <div class="flex items-start gap-4">
+              <div class="text-green-brand text-2xl mt-1">
+                <i class="bi bi-telephone-outbound-fill"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-zinc-900 uppercase text-xs tracking-wider mb-2">Canales de Atención Directa</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed mb-1">
+                  <strong class="text-zinc-800">Ventas & Asesoría:</strong> +51 928 372 674 | ventas@vilcahuaura.pe
+                </p>
+                <p class="text-xs text-zinc-600 leading-relaxed">
+                  <strong class="text-zinc-800">Área Técnica:</strong> +51 999 888 777 | sanidad@vilcahuaura.pe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Formulario Minimalista -->
+      <!-- Formulario B2B Cotización -->
       <div class="reveal-3d tilt-container">
-        <form class="glass-lens rounded-[40px] p-10 flex flex-col gap-8 tilt-card w-full">
-          <h2 class="text-2xl font-black uppercase tracking-widest text-white mb-2">Envíanos un mensaje</h2>
+        <form class="glass-lens rounded-[40px] p-8 md:p-10 flex flex-col gap-6 tilt-card w-full">
+          <div>
+            <span class="text-xs font-bold tracking-widest text-green-brand uppercase mb-1 block">Cotización B2B</span>
+            <h2 class="text-2xl font-black uppercase tracking-widest text-zinc-900">Iniciar Solicitud</h2>
+          </div>
           
-          <div class="relative">
-            <input type="text" id="nombre" class="w-full bg-transparent border-0 border-b border-white/20 text-white py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light placeholder-white/40" placeholder="Tu nombre" required>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="relative">
+              <input type="text" id="nombre" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light placeholder-zinc-400" placeholder="Nombre o Razón Social" required>
+            </div>
+
+            <div class="relative">
+              <input type="text" id="telefono" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light placeholder-zinc-400" placeholder="WhatsApp / Teléfono" required>
+            </div>
           </div>
 
           <div class="relative">
-            <input type="email" id="email" class="w-full bg-transparent border-0 border-b border-white/20 text-white py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light placeholder-white/40" placeholder="Tu email" required>
+            <input type="email" id="email" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light placeholder-zinc-400" placeholder="Correo Electrónico" required>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="relative">
+              <select id="departamento" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light text-zinc-700" required>
+                <option value="" disabled selected>Departamento de Cultivo</option>
+                <option value="Lima">Lima</option>
+                <option value="Ica">Ica</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="Lambayeque">Lambayeque</option>
+                <option value="Ancash">Áncash</option>
+                <option value="Arequipa">Arequipa</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="relative">
+              <select id="perfil" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light text-zinc-700" required>
+                <option value="" disabled selected>Perfil del Productor</option>
+                <option value="Pequeño">Pequeño Productor</option>
+                <option value="Mediano">Mediano Agricultor</option>
+                <option value="Agroindustrial">Empresa Agroindustrial</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="relative">
+              <select id="interes" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light text-zinc-700" required>
+                <option value="" disabled selected>Variedad / Sustrato de Interés</option>
+                <option value="San Andreas">Plantines San Andreas</option>
+                <option value="Aromas">Plantines Aromas</option>
+                <option value="Festival">Plantines Festival</option>
+                <option value="BerryMix">Sustrato BerryMix</option>
+                <option value="Fórmula Medida">Sustratos a Medida</option>
+              </select>
+            </div>
+
+            <div class="relative">
+              <select id="canal" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light text-zinc-700" required>
+                <option value="" disabled selected>Canal de contacto preferido</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Llamada">Llamada Telefónica</option>
+                <option value="Email">Correo Electrónico</option>
+              </select>
+            </div>
           </div>
 
           <div class="relative">
-            <textarea id="mensaje" rows="4" class="w-full bg-transparent border-0 border-b border-white/20 text-white py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light placeholder-white/40 resize-none" placeholder="Tu mensaje..." required></textarea>
+            <textarea id="mensaje" rows="3" class="w-full bg-transparent border-0 border-b border-black/20 text-zinc-900 py-3 focus:outline-none focus:border-green-brand transition-colors text-sm font-light placeholder-zinc-400 resize-none" placeholder="Especificar hectáreas, cantidad estimada de plantines o requerimientos de sustrato..." required></textarea>
           </div>
 
-          <button type="submit" class="w-full bg-white text-black py-4 rounded-full font-black uppercase tracking-widest hover:bg-green-brand hover:text-white transition-premium mt-4">
-            Enviar Mensaje
+          <button type="submit" class="w-full bg-zinc-900 text-white py-4 rounded-full font-black uppercase tracking-widest hover:bg-green-brand transition-premium mt-4">
+            Solicitar Cotización Técnica
           </button>
         </form>
       </div>
     </div>
   </section>
 
+
+  
+
   <!-- FAQS (Puramente CSS) -->
   <section class="relative py-24 px-6 md:px-16 overflow-hidden">
     <div class="max-w-4xl mx-auto relative z-10 w-full text-center">
       <div class="mb-16 reveal-scale">
         <h2 class="text-5xl md:text-6xl font-black text-stroke uppercase">F.A.Q.</h2>
-        <p class="text-white/50 font-light mt-4">Preguntas Frecuentes</p>
+        <p class="text-zinc-500 font-light mt-4">Preguntas Frecuentes</p>
       </div>
 
       <div class="flex flex-col gap-4 text-left reveal-3d">
@@ -114,7 +232,7 @@
             ¿Cuál es el pedido mínimo de plantines?
             <i class="bi bi-chevron-down faq-icon transition-transform duration-300"></i>
           </summary>
-          <div class="px-6 pb-6 text-sm text-white/60 leading-relaxed font-light">
+          <div class="px-6 pb-6 text-sm text-zinc-600 leading-relaxed font-light">
             El pedido mínimo es de 1,000 unidades. Para cantidades mayores a 10,000 ofrecemos precios preferenciales y asesoría en campo gratuita.
           </div>
         </details>
@@ -124,7 +242,7 @@
             ¿Hacen envíos a todo el Perú?
             <i class="bi bi-chevron-down faq-icon transition-transform duration-300"></i>
           </summary>
-          <div class="px-6 pb-6 text-sm text-white/60 leading-relaxed font-light">
+          <div class="px-6 pb-6 text-sm text-zinc-600 leading-relaxed font-light">
             Sí, despachamos a nivel nacional. Coordinamos el transporte especializado para asegurar que la planta llegue fresca e hidratada.
           </div>
         </details>
@@ -134,7 +252,7 @@
             ¿Brindan asesoría técnica?
             <i class="bi bi-chevron-down faq-icon transition-transform duration-300"></i>
           </summary>
-          <div class="px-6 pb-6 text-sm text-white/60 leading-relaxed font-light">
+          <div class="px-6 pb-6 text-sm text-zinc-600 leading-relaxed font-light">
             Absolutamente. Nuestro equipo de ingenieros te acompañará desde la preparación del suelo hasta las primeras etapas de producción.
           </div>
         </details>
@@ -143,35 +261,35 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="max-w-7xl mx-auto w-full relative z-10 pt-16 pb-6 mt-12 px-6 md:px-16 border-t border-white/5 grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-left">
+  <footer class="max-w-7xl mx-auto w-full relative z-10 pt-16 pb-6 mt-12 px-6 md:px-16 border-t border-black/5 grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-left">
     <div>
-      <p class="text-white font-bold text-lg mb-2">Escríbenos</p>
-      <p class="text-white/60 text-xs md:text-sm">contacto@vilcahuaura.pe</p>
+      <p class="text-zinc-900 font-bold text-lg mb-2">Escríbenos</p>
+      <p class="text-zinc-500 text-xs md:text-sm">contacto@vilcahuaura.pe</p>
     </div>
     <div>
-      <p class="text-white font-bold text-lg mb-2">Visítanos</p>
-      <p class="text-white/60 text-xs md:text-sm">Vilcahuaura, Huaura<br>Lima, Perú.</p>
+      <p class="text-zinc-900 font-bold text-lg mb-2">Visítanos</p>
+      <p class="text-zinc-500 text-xs md:text-sm">Vilcahuaura, Huaura<br>Lima, Perú.</p>
     </div>
     <div>
-      <p class="text-white font-bold text-lg mb-2">Conversemos</p>
-      <p class="text-white/60 text-xs md:text-sm">+51 928 372 674</p>
+      <p class="text-zinc-900 font-bold text-lg mb-2">Conversemos</p>
+      <p class="text-zinc-500 text-xs md:text-sm">+51 928 372 674</p>
     </div>
     <div class="flex md:justify-end md:items-center h-full">
-      <p class="text-white/40 text-[11px] font-light">© 2025 VV | Arte Puro.</p>
+      <p class="text-zinc-400 text-[11px] font-light">© 2025 VV | Arte Puro.</p>
     </div>
   </footer>
 
 
 
   <div class="menu-drawer fixed inset-0 z-[99] flex flex-col justify-start">
-    <label for="menu-toggle" class="menu-backdrop absolute inset-0 bg-black/80 backdrop-blur-md cursor-pointer"></label>
-    <div class="menu-panel relative w-full bg-black/40 border-b border-white/10 backdrop-blur-3xl p-8 pt-24 shadow-2xl flex flex-col gap-6 text-white text-center">
-      <a href="index.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Home</a>
-      <a href="nosotros.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Nosotros</a>
-      <a href="productos.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Productos</a>
-      <a href="clientes.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Clientes</a>
-      <a href="contacto.html" class="text-4xl font-black uppercase text-stroke hover:text-white transition-premium py-2">Contacto</a>
-      <label for="menu-toggle" class="absolute top-8 right-8 text-white/60 hover:text-white cursor-pointer transition-premium text-3xl hover:rotate-90"><i class="bi bi-x-lg"></i></label>
+    <label for="menu-toggle" class="menu-backdrop absolute inset-0 bg-black/30 backdrop-blur-md cursor-pointer"></label>
+    <div class="menu-panel relative w-full bg-white/40 border-b border-black/10 backdrop-blur-3xl p-8 pt-24 shadow-2xl flex flex-col gap-6 text-zinc-900 text-center">
+      <a href="index.html" class="text-4xl font-black uppercase text-stroke hover:text-zinc-950 transition-premium py-2">Home</a>
+      <a href="nosotros.html" class="text-4xl font-black uppercase text-stroke hover:text-zinc-950 transition-premium py-2">Nosotros</a>
+      <a href="productos.html" class="text-4xl font-black uppercase text-stroke hover:text-zinc-950 transition-premium py-2">Productos</a>
+      <a href="clientes.html" class="text-4xl font-black uppercase text-stroke hover:text-zinc-950 transition-premium py-2">Clientes</a>
+      <a href="contacto.html" class="text-4xl font-black uppercase text-stroke hover:text-zinc-950 transition-premium py-2">Contacto</a>
+      <label for="menu-toggle" class="absolute top-8 right-8 text-zinc-500 hover:text-zinc-950 cursor-pointer transition-premium text-3xl hover:rotate-90"><i class="bi bi-x-lg"></i></label>
     </div>
   </div>
 
